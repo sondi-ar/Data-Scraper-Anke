@@ -1,0 +1,14 @@
+{
+    "name": "Data-Scraper",
+    "version": "0.0.1",
+    "homepage": "",
+    "description": "",
+    "author": "Anke Sondi",
+    "main": "app.js",
+    "dependencies": {
+        "nodemon": "latest",
+        "express": "latest",
+        "request": "latest",
+        "cheerio": "latest"
+    }
+}
