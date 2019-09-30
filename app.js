@@ -104,7 +104,6 @@ app.get('/instagram', function(req, res){
       fs.writeFile('./data/instagram_output.js', 'var instagram_output = ' + instagram_data, function(err){
         console.log('File is written successfully!');
       });
-
     }
   });
 });
