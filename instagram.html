@@ -8,7 +8,7 @@
                 for(let i = 0; i < instagram_output.graphql.hashtag.edge_hashtag_to_media.edges.length; i++) {
                     img = "<img class='tile' src='"+instagram_output.graphql.hashtag.edge_hashtag_to_media.edges[i].node.display_url+"'>";
                     div.innerHTML = div.innerHTML + img;
-                }
+                    }
             }
         </script>
         <style>
