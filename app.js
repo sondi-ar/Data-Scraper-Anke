@@ -101,7 +101,7 @@ app.get('/instagram', function(req, res){
       res.send(instagram_data);
 
       // save the data we've stored in our object on our machine
-      fs.writeFile('./data/instagram_output.js', 'var instagram_output = ' + instagram_data, function(err){
+      fs.writeFile('instagram_output.js', 'var instagram_output = ' + instagram_data, function(err){
         console.log('File is written successfully!');
       });
     }
