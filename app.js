@@ -16,7 +16,7 @@ var download_dir = './downloaded';
 app.get('/instagram', function(req, res){
 ​
   // try any hashtags and see the results, make sure to write INSIDE the quotation marks
-  var hashtag = 'Kusama';
+  var hashtag = 'kusama';
   var url = 'https://instagram.com/explore/tags/'+ hashtag +'/?__a=1';
 ​
   // let's make the http request to the url above using the 'request' dependency
