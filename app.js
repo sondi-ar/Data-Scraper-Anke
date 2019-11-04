@@ -6,6 +6,7 @@ var exec = require('child_process').exec;
 var spawn = require('child_process').spawn;
 var fs = require('fs');
 var url = require('url');
+const puppeteer = require('puppeteer');
 
 var port = 3000;
 var app = express();
@@ -34,7 +35,7 @@ app.get('/instagram', function(req, res){
       for(var i = 0; i < instagram_data.graphql.hashtag.edge_hashtag_to_media.edges.length; i++) {
         instagram_urls[i] = instagram_data.graphql.hashtag.edge_hashtag_to_media.edges[i].node.display_url;
 
-        // download_file_curl(instagram_data.graphql.hashtag.edge_hashtag_to_media.edges[i].node.display_url);
+        download_file_curl(instagram_data.graphql.hashtag.edge_hashtag_to_media.edges[i].node.display_url);
       }
 
       // send the data we've stored in our array back to the browser
